@@ -1,2 +1,16 @@
-<h1>This is my handlebars homepage...</h1>
-<p>{{stuff}}</p>
+
+
+<div class="jumbotron">
+  <h1 class="display-4">{{ stock.companyName}} ({{stock.symbol}})</h1>
+  <strong>Latest price: </strong>${{ stock.latestPrice}}<br/>
+<strong>Previous close: </strong>${{ stock.previousClose}}<br/>
+<strong>Percent change: </strong>{{ stock.changePercent}}%<br/>
+<strong>Market value: </strong>${{ stock.marketCap}}<br/>
+<strong>Ytd change: </strong>{{ stock.ytdChange}}%<br/>
+<br/><br/>
+</div>
+<!--
+{{#each stock}}
+{{@key}} | {{this}}<br/>
+{{/each}}
+-->
